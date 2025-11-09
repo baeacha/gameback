@@ -137,8 +137,8 @@ app.get("/leaderboard", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Maze backend listening on http://localhost:${PORT}`);
+app.listen(process.env.PORT || 8000, () => {
+  console.log("Server running");
 });
 
 /*
